@@ -407,32 +407,6 @@ TAVILY_API_KEY = "your_tavily_api_key"
 Cloud credentials should be stored using Streamlit Secrets rather than committed to GitHub.
 
 ---
-
-# 🔐 Security
-
-Sensitive credentials should never be committed to the repository.
-
-Keep the following private:
-
-```text
-.env
-.streamlit/secrets.toml
-venv/
-API keys
-```
-
-A `.env.example` file can document required configuration without exposing credentials.
-
-Example:
-
-```env
-LLM_PROVIDER=ollama
-OLLAMA_MODEL=qwen3:4b
-TAVILY_API_KEY=your_tavily_api_key
-```
-
----
-
 # 📊 Current Prototype
 
 The current version focuses on building a complete functional agentic research pipeline with:
