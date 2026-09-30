@@ -2,12 +2,6 @@ streamlit
 langchain
 langgraph
 langchain-groq
-langchain-openai
-python-dotenv
-pydantic
-tavily-pythonlanggraph
-langchain
-langchain-openai
 python-dotenv
 pydantic
 tavily-python
