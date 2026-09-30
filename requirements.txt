@@ -2,6 +2,7 @@ streamlit
 langchain
 langgraph
 langchain-groq
+langchain-ollama
 python-dotenv
 pydantic
 tavily-python
