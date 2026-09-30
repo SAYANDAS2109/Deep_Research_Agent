@@ -12,7 +12,6 @@ def get_llm(num_predict=None):
         "ollama"
     ).lower()
 
-
     # ======================================
     # LOCAL OLLAMA
     # ======================================
@@ -35,10 +34,7 @@ def get_llm(num_predict=None):
         if num_predict is not None:
             kwargs["num_predict"] = num_predict
 
-        return ChatOllama(
-            **kwargs
-        )
-
+        return ChatOllama(**kwargs)
 
     # ======================================
     # GROQ
@@ -61,10 +57,7 @@ def get_llm(num_predict=None):
         if num_predict is not None:
             kwargs["max_tokens"] = num_predict
 
-        return ChatGroq(
-            **kwargs
-        )
-
+        return ChatGroq(**kwargs)
 
     # ======================================
     # OPENAI
@@ -87,27 +80,7 @@ def get_llm(num_predict=None):
         if num_predict is not None:
             kwargs["max_tokens"] = num_predict
 
-        return ChatOpenAI(
-            **kwargs
-        )
-
-
-    else:
-
-        raise ValueError(
-            f"Unsupported LLM provider: {provider}"
-        )
-        model = os.getenv(
-            "OPENAI_MODEL",
-            "gpt-5.6"
-        )
-
-        return ChatOpenAI(
-            model=model,
-            temperature=0,
-            
-            
-        )
+        return ChatOpenAI(**kwargs)
 
     else:
 
