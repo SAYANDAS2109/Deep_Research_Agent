@@ -1,12 +1,6 @@
 # 🔎 Deep Research Agent
 
 An end-to-end **multi-agent Deep Research Agent** that transforms complex user questions into structured, evidence-backed research reports using web search, evidence extraction, LLM synthesis, citation validation, and critical review.
-
-## 🚀 Live Demo
-
-👉 **Try the live application:**  
-https://deepresearchagent-obymdyc6zkrovqdz3hpmne.streamlit.app/
-
 ---
 
 ## 📌 Overview
